@@ -1,0 +1,14 @@
+inputSet:
+  name: InputSet
+  identifier: InputSet
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: simple_pipeline
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
